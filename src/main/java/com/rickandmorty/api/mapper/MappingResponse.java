@@ -1,4 +1,4 @@
-package com.rickandmorty.api.exception.mapper;
+package com.rickandmorty.api.mapper;
 
 import com.rickandmorty.api.model.CharacterApi;
 import com.rickandmorty.api.model.CharacterResponse;

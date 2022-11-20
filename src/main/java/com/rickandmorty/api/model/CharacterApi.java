@@ -1,9 +1,12 @@
 package com.rickandmorty.api.model;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import java.time.LocalDateTime;
+import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CharacterApi {
 
     private int id;
@@ -17,5 +20,5 @@ public class CharacterApi {
     private String image;
     private List<String> episode;
     private String url;
-    private LocalDateTime created;
+    private String created;
 }
