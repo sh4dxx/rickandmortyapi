@@ -9,13 +9,13 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class GetApiServiceImp implements GetApiService {
 
-    @Value("${spring.external.service.base.url}")
-    private String basePath;
+    private final String basePath;
 
     private final RestTemplate restTemplate;
 
 
-    public GetApiServiceImp(RestTemplate restTemplate) {
+    public GetApiServiceImp(@Value("${spring.external.service.base.url}")String basePath, RestTemplate restTemplate) {
+        this.basePath = basePath;
         this.restTemplate = restTemplate;
     }
 
