@@ -1,11 +1,13 @@
 package com.rickandmorty.api.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-
-import java.time.LocalDateTime;
+import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class LocationApi {
 
     private int id;
@@ -13,6 +15,6 @@ public class LocationApi {
     private String type;
     private String dimension;
     private List<String> residents;
-    private List<String> urls;
-    private LocalDateTime created;
+    private String url;
+    private String created;
 }
